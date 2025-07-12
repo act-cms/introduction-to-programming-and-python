@@ -11,4 +11,4 @@ diff = [
     }
 ]
 
-QUIZZES = {"diff": diff}
+#QUIZZES = {"diff": diff}
