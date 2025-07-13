@@ -23,4 +23,4 @@ many_q = [
     }
 ]
 
-QUIZZES = {"num_q": num_q , "many_q": many_q}
+#QUIZZES = {"num_q": num_q , "many_q": many_q}
