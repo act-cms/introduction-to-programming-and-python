@@ -18,7 +18,7 @@ intro_order_of_operations = [
         "answers": [
             {"answer": "+1", "correct": False, "feedback": "Not quite. Which operation, exponentiation or multiplication, takes precedence?"},
             {"answer": "-1", "correct": True, "feedback": "That is correct. Exponentiation takes precendence over multiplication"},
-            {"answer": "I have no idea", "correct": True, "feedback": "That is correct."}
+            {"answer": "I have no idea", "correct": False, "feedback": "That is correct."}
         ]
     }
 ]
@@ -64,7 +64,7 @@ intro_nested_comparison_statements = [
 
 intro_for_loop = [
     {
-        "question": "What mathematical does the code below evaluate? <br><br> i_max = 3 <br> j_max = 5 <br><br> N = 0 <br> for i in range(i_max): <br> $\hspace{1cm}$ N = N + i <br><br> D = 0 <br> for i in range(j_max): <br> $\hspace{1cm}$ D = D - i <br><br> R = N / D ",
+        "question": "What mathematical does the code below evaluate? <br><br> i_max = 3 <br> j_max = 5 <br><br> N = 0 <br> for i in range(i_max): <br> &emsp;&emsp; N = N + i <br><br> D = 0 <br> for i in range(j_max): <br> &emsp;&emsp; D = D - i <br><br> R = N / D ",
         "type": "many_choice",
         "answers": [
             {"answer": "$[ \sum_{i=0}^{3} i ] / [ \sum_{i=0}^{5} i ]$", "correct": False, "feedback": "Not quite. Did you check what each for loop 'adds' up?"},
@@ -93,8 +93,8 @@ intro_vectors = [
         "question": "Assuming that v1 and v2 are as defined above, what is the result of the following Python code? <br><br> diff = np.sqrt(v2) - v1 <br> print( diff )",
         "type": "many_choice",
         "answers": [
-            {"answer": "[ 0. $\hspace{2mm}$  0. $\hspace{2mm}$ 0. ]", "correct": False, "feedback": "Not quite. What is the data type of v1 and v2? The data type of diff will be the same."},
-            {"answer": "[ 0 $\hspace{2mm}$ 0 $\hspace{2mm}$ 0 ]", "correct": True, "feedback": "Element-wise operations return a vector"},
+            {"answer": "[ 0. &ensp;  0. &ensp; 0. ]", "correct": False, "feedback": "Not quite. What is the data type of v1 and v2? The data type of diff will be the same."},
+            {"answer": "[ 0 &ensp; 0 &ensp; 0 ]", "correct": True, "feedback": "Element-wise operations return a vector"},
             {"answer": "0", "correct": False, "feedback": "Not quite. Remember element-wise operations return a vector, not a scalar (number)"},
             {"answer": "I have no idea", "correct": False, "feedback": "You should review the description of element-wise operations with arrays given above."}
         ]
@@ -106,9 +106,9 @@ intro_matrices = [
         "question": "What is the result of the following Python code? <br><br> import numpy as np <br> Nr = 2 <br> Nc = 3 <br> M = np.ones( ( Nr , Nc ) ) <br> B = np.transpoe( M ) <br> print( B[ 0 , :] ) ",
         "type": "many_choice",
         "answers": [
-            {"answer": "[ 1 $\hspace{2mm}$ 1 ]", "correct": False, "feedback": "Not quite. What is the data type of M[0 , 0]?"},
-            {"answer": "[ 1. $\hspace{2mm}$  1. ]", "correct": True, "feedback": "Correct. np.tranpose() evalautes the transpose of a matrix so B is a 3x2 matrix, so the 0th row is a vector of length 2"},
-            {"answer": "[ 1. $\hspace{2mm}$  1. $\hspace{2mm}$  1. ]", "correct": False, "feedback": "Not quite. What does the function np.transpose() do? Use help() to find out."},
+            {"answer": "[ 1 &ensp; 1 ]", "correct": False, "feedback": "Not quite. What is the data type of M[0 , 0]?"},
+            {"answer": "[ 1. &ensp;  1. ]", "correct": True, "feedback": "Correct. np.tranpose() evalautes the transpose of a matrix so B is a 3x2 matrix, so the 0th row is a vector of length 2"},
+            {"answer": "[ 1. &ensp;  1. &ensp;  1. ]", "correct": False, "feedback": "Not quite. What does the function np.transpose() do? Use help() to find out."},
             {"answer": "I have no idea", "correct": False, "feedback": "Please see the documatation of np.transpose() and the description of slices of matrices above."}
         ]
     }
