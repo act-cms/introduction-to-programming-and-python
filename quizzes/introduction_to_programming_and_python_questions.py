@@ -103,7 +103,7 @@ intro_vectors = [
 
 intro_matrices = [
     {
-        "question": "What is the result of the following Python code? <br><br> import numpy as np <br> Nr = 2 <br> Nc = 3 <br> M = np.ones( ( Nr , Nc ) ) <br> B = np.transpoe( M ) <br> print( B[ 0 , :] ) ",
+        "question": "What is the result of the following Python code? <br><br> import numpy as np <br> Nr = 2 <br> Nc = 3 <br> M = np.ones( ( Nr , Nc ) ) <br> B = np.transpose( M ) <br> print( B[ 0 , :] ) ",
         "type": "many_choice",
         "answers": [
             {"answer": "[ 1 &ensp; 1 ]", "correct": False, "feedback": "Not quite. What is the data type of M[0 , 0]?"},
